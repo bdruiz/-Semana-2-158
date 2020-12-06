@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <MoviesAPI></MoviesAPI>
     <div id="team" class="container-fluid">
       <div class="row justify-content-center mb-5">
         <div class="col mt-5" v-for="(item, index) of team" :key="index">
@@ -12,10 +13,13 @@
 
 <script>
 import TeamCard from "./components/TeamCard.vue"
+import MoviesAPI from './components/MoviesAPI.vue'
+
 export default {
   name: 'App',
   components:{
     TeamCard,
+    MoviesAPI
   },
   data(){
     return {
